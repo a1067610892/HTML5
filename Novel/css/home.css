@@ -1,0 +1,32 @@
+#Home {
+    width: 10rem;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: row;
+    flex-flow:wrap;
+    background: url('../img/2.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+#Home a {
+    width: 4rem;
+    margin: 0.5rem 0.4rem;
+    height: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    justify-content: space-between;
+    font-size: .32rem;
+    color: black;
+    text-decoration: none;
+    background: #FFF;
+    border-radius: .2rem;
+}
+#Home .border::before {
+    border-color: black;
+    border-radius: .6rem;
+}

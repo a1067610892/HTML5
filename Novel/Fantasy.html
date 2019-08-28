@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/border.css" rel="stylesheet" type="text/css" />
+    <link href="common/css/flexble/flexible.css" rel="stylesheet" type="text/css"  />
+    <script src="common/js/flexble/flexible.js"></script>
+    <script src="common/js/axios.js"></script>
+    <title>玄幻小说</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    window.onload = function() {
+        axios.get('https://a1067610892.github.io/-Novel_JSON/Fantasy.json').then((res) => {
+            console.log(res)
+        })
+    }
+</script>

@@ -1,0 +1,9 @@
+.login {
+    width: 10rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/1.jpg') no-repeat;
+    background-size: 100% 100%;
+}
