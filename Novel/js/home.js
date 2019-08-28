@@ -19,4 +19,10 @@ window.onload = function () {
             num = 1
         }
     },4500)
+    let Homes = document.getElementById('Home').querySelectorAll('.border');
+    for (let i = 0; i < Homes.length; i++) {
+        Homes[i].onclick = function() {
+            location.href=`novel.html?id=${i}`
+        }
+    }
 }
