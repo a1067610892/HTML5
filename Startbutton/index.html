@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css" />
+    <title>开始按钮</title>
+</head>
+<body>
+    <button class="login">
+        <p>LOGIN</p>
+        <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <svg class="checkmark" width="30px" height="30px" stroke="white" fill="none">
+            <polyline points="2,10 12,18 28,2"></polyline>
+        </svg>
+    </button>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $($('.login').click(
+        function() {
+            $(this).toggleClass('active');
+            setTimeout(
+                () => {
+                    $(this).toggleClass('verity')
+                },2000
+            )
+        }
+    ))
+</script>
