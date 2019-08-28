@@ -18,5 +18,5 @@ window.onload = function () {
             html.style.backgroundImage = "url('./img/2.jpg')"
             num = 1
         }
-    },3000)
+    },4500)
 }
