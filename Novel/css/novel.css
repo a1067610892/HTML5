@@ -1,0 +1,11 @@
+#head {
+    width: 10rem;
+    height: 1.333333rem;
+    position: fixed;
+    top: 0;
+    background: #858bd7;
+    line-height: 1.333333rem;
+    text-align: center;
+    color: #FFF;
+    font-size: .32rem;
+}
