@@ -12,39 +12,24 @@
     <title id="title">玄幻小说</title>
 </head>
 <body>
-    <header id="head"></header>
+    <header class="head">
+        <img onclick="Return()" src="./img/Return.png">
+        <span id="header"></span>
+    </header>
+    <div id="row">
+    </div>
 </body>
 </html>
+<script src="js/novel.js"></script>
 <script>
-    window.onload = function() {
-        let title = document.getElementById('title');
-        let head = document.getElementById('head');
-        let url = location.href
-        let a = url.split("=")
-        if (a[1] == 0) {
-            title.innerHTML = '玄幻小说'
-            head.innerHTML = '玄幻小说'
-            axios.get('https://a1067610892.github.io/-Novel_JSON/Fantasy.json').then((res) => {
-                console.log(res.data)
-            })
-        } else if (a[1] == 1) {
-            title.innerHTML = '修真小说'
-            head.innerHTML = '修真小说'
-            axios.get('https://a1067610892.github.io/-Novel_JSON/ZhenZhen.json').then((res) => {
-                console.log(res.data)
-            })
-        } else if (a[1] == 2) {
-            title.innerHTML = '都市小说'
-            head.innerHTML = '都市小说'
-        } else if (a[1] == 3) {
-            title.innerHTML = '穿越小说'
-            head.innerHTML = '穿越小说'
-        } else if (a[1] == 4) {
-            title.innerHTML = '网游小说'
-            head.innerHTML = '网游小说'
-        } else if (a[1] == 5) {
-            title.innerHTML = '科幻小说'
-            head.innerHTML = '科幻小说'
-        }
-    }
+    let title = document.getElementById('title')
+    let head = document.getElementById('header')
+    let url = location.href
+    let a = url.split("=")
+    getText(a, head, 0,'Fantasy', '玄幻小说',)
+    getText(a, head, 1,'ZhenZhen', '修真小说',)
+    getText(a, head, 2,'ZhenZhen', '都市小说',)
+    getText(a, head, 3,'ZhenZhen', '穿越小说',)
+    getText(a, head, 4,'ZhenZhen', '网游小说',)
+    getText(a, head, 5,'ZhenZhen', '科幻小说',)
 </script>

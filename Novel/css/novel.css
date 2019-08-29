@@ -1,4 +1,4 @@
-#head {
+.head {
     width: 10rem;
     height: 1.333333rem;
     position: fixed;
@@ -7,5 +7,32 @@
     line-height: 1.333333rem;
     text-align: center;
     color: #FFF;
+}
+.head img {
+    width: .8rem;
+    height: .8rem;
+    float: left;
+    margin: .266667rem .2rem;
+}
+.head #header {
+    width: 8rem;
+    height: 1.333333rem;
+    display: block;
+    float: left;
     font-size: .32rem;
+}
+#row {
+    width: 10rem;
+    height: 100%;
+    margin: 1.333333rem auto 0 auto;
+}
+#row div {
+    width: 10rem;
+    height: 3.733333rem;
+}
+#row div .img {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: .266667rem 0;
+    float: left;
 }
