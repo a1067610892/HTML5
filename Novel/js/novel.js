@@ -9,7 +9,10 @@ function getText(a, head, i, type, text) {
                 let odivs = document.createElement('div')
                 odivs.innerHTML = `
                     <img class='img' src="${res.data[j].img}" />
-                    <span>${res.data[j].name}</span>
+                    <span class='span'>${res.data[j].name}</span>
+                    <span class='author'>作者：${res.data[j].author}</span>
+                    <span class='author'>更新时间：${res.data[j].time}</span>
+                    <span class='chapter'>最新章节：${res.data[j].chapter}</span>
                 `;
                 box.appendChild(odivs);
             }

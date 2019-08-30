@@ -29,10 +29,36 @@
 #row div {
     width: 10rem;
     height: 3.733333rem;
+    padding: .2rem 0;
 }
 #row div .img {
     width: 3.2rem;
-    height: 3.2rem;
-    margin: .266667rem 0;
+    height: 3.733333rem;
     float: left;
+}
+#row div .span {
+    width: 6.5rem;
+    height: .8rem;
+    line-height: .8rem;
+    display: block;
+    float: left;
+    font-size: .38rem;
+    margin-left: .266667rem;
+}
+#row div .author {
+    width: 6.5rem;
+    height: .8rem;
+    line-height: .8rem;
+    display: block;
+    float: left;
+    font-size: .32rem;
+    margin-left: .266667rem;
+}
+#row div .chapter {
+    width: 6.5rem;
+    line-height: .6rem;
+    display: block;
+    float: left;
+    font-size: .32rem;
+    margin-left: .266667rem;
 }
